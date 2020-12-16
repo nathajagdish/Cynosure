@@ -1,0 +1,85 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+body{font-family:Century Gothic; font-size: 14px;}
+a, li{display: inline-block;}
+
+
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(pqp.jpg); /* use linear-gradient for add the black layover for the background image */
+    height: 100vh;
+    background-size: cover;     /* use for adjust the background image */
+    background-position: center;
+	font-family: Arial;
+}
+
+
+
+ul{ 
+   
+    float: right;  /* for moving the options in the right side */
+    list-style: none;
+    margin: 0px;   /*for adjustment the option show in right place or position */
+	
+}
+
+ul li{
+     display: inline-block; /* to make option show in side by side */
+	 float: left;
+	 width: 100px;
+	 height: 28px;
+	 background-color: black;
+	 opacity: .7;
+	 line-height: 10px;
+	 text-align: center;
+	 font-size: 9px;
+}
+
+
+
+ul li a{
+	text-decoration: none; /* for text decoration and also giving border and border color padding */
+	color:#fff;
+	padding: 5px 20px;
+	border: 1px solid transparent; /* use transparent for hidden the options border */
+	transition: 0.6s ease;  /* for changing the color of option smoothly */
+	display: block;
+}
+
+ul li a:hover{
+	background-color: black; /* use it for when touch the option then it change its color */
+	color: aqua;
+}
+
+ul li.active a{
+		background-color: black; /* use to show the active option color by default */
+	    color: aqua;
+}
+ul li ul li {
+	display:none;
+}
+ul li:hover ul li {
+	display: block;
+}
+.logo img{
+	float: left; /* for set the size of logo */
+	width: 100px;
+	height: auto;
+}
+
+.main{
+	max-width: 1200px;  /* for showing the logo and option in the center position */
+	margin: auto;
+} 
+
+.title{
+	position: left;  /* use it for set the position of title */
+	top: 10%;
+	left: 20%;
+    transform: translate(-50%,-50%);
+}
+
+.title h1{
+	color:#fff;
+	font-size: 80px;
+}
+
+	

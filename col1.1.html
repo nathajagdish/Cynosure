@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Creating Fixed Header and Footer with CSS</title>
+<style type="text/css">
+    /* Add some padding on document's body to prevent the content
+    to go underneath the header and footer */
+    body{        
+        padding-top: 60px;
+        padding-bottom: 40px;
+		
+    }
+    .container{
+	
+        width: 80%;
+        margin: 0 auto; /* Center the DIV horizontally */
+    }
+    .fixed-header, .fixed-footer{
+        width: 100%;
+        position: fixed;        
+        background: #333;
+        padding: 10px 0;
+        color: #fff;
+    }
+    .fixed-header{
+        top: 0;
+    }
+    .fixed-footer{
+        bottom: 0;
+    }    
+    /* Some more styles to beutify this example */
+    nav a{
+        color: #fff;
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+    }
+	a{
+        color: #EF5838;
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+    }
+    .container p{
+	padding-top:5px;
+	
+        line-height: 5px; /* Create scrollbar to test positioning */
+    }
+	p{
+	color:green;
+	
+	}
+	[class*="col-"] {
+  width: 100%;
+}
+</style>
+</head>
+<body>
+    <div class="fixed-header">
+        <div class="container">
+            <nav>
+               <center> <a href="projectindex.html" target="self">Home</a></center>
+                
+               
+               
+               
+            </nav>
+        </div>
+    </div><center>
+    <div class="container">
+    	<p>SITES
+    	FOR
+		PLACEMENT</p>
+        
+<p><a href="https://www.indiabix.com/" target="main">indiabigs</a></p>
+<p><a href="https://www.topcoder.com" target="blank">topcoder</a></p>
+
+<p><a href="https://www.faceprep.in/aptipedia/" target="main">aptipedia</a></p>
+<p><a href="http://www.lofoya.com/" target="main">lofoya</a></p>
+<p><a href="http://ww3.math4.com/" target="main">math4</a></p>
+<p><a href="https://www.crackaptitude.com/" target="main">crackaptitude</a></p>
+<p><a href="https://www.geeksforgeeks.org/" target="blank">Geeks for geeks</a></p>
+<p><a href="https://www.codecademy.com/" target="main">Code academy</a></p>
+<p><a href="https://www.w3schools.com/" target="blank">W3 Schools</a></p>
+<p><a href="https://practice.geeksforgeeks.org/courses/SudoPlacement/" target="blank">sudoplacement</a></p>
+<p><a href="https://www.youtube.com/watch?v=PihtA9D-IlE" target="blank">youtube</a></p></center>
+
+    </div>    
+    <div class="fixed-footer">
+        <div class="container">
+		<nav>
+		<center><a href="#">CONTACT US</a></center>
+		</nav>
+		
+		
+		</div>        
+    </div>
+</body>
+</html>                            

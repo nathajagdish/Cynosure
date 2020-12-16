@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creating Fixed Header and Footer with CSS</title>
+<style type="text/css">
+    /* Add some padding on document's body to prevent the content
+    to go underneath the header and footer */
+    body{        
+        padding-top: 60px;
+        padding-bottom: 40px;
+		
+    }
+    .body{
+	
+	animation:animate 16s ease-in-out infinite;
+	
+	
+        width: 80%;
+        margin: 0 auto; /* Center the DIV horizontally */
+    }
+    .fixed-header, .fixed-footer{
+        width: 100%;
+        position: fixed;        
+        background: #333;
+        padding: 10px 0;
+        color: #fff;
+    }
+    .fixed-header{
+        top: 0;
+    }
+    .fixed-footer{
+        bottom: 0;
+    }    
+    /* Some more styles to beutify this example */
+    nav a{
+        color: #fff;
+		text-shadow:3px 3px blue;
+		text-transform:uppercase;
+        text-decoration: none;
+		letter-spacing:5px;
+        padding: 7px 25px;
+        display: inline-block;
+    }
+	body{
+            position:absolulte;
+            left: 0;
+            right:65%;
+            width: 100%;
+            height: 50h;
+            animation: animate 100s ease-in-out infinite;
+             }
+		 h1{
+            color:cyan;
+        }
+		 h2{
+            color:cyan;
+        }
+		 h3{
+            color:cyan;
+        }
+		 h4{
+            color:cyan;
+        }
+        @keyframes animate {
+             0%,100%{
+                background-image: url(images/2.jpg)
+            }
+            15%{
+                background-image: url(images/eb.jpg)
+            }
+            30%{
+                background-image: url(images/3.png)
+            }
+            45%{
+                background-image: url(images/4.jpg)
+            }
+            60%{
+                background-image: url(images/5.jpg)
+            }
+            75%{
+                background-image: url(images/6.jpg)
+            }
+            90%{
+                background-image: url(images/7.jpg)
+            }
+			
+
+            
+        }
+	a{
+        color: red;
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+    }
+    .container p{
+	
+}
+	padding-top:5px;
+	
+        line-height: 5px; /* Create scrollbar to test positioning */
+    }
+	[class*="col-"] {
+  width: 100%;
+}
+h2{
+marquee
+}
+
+</style>
+</head>
+<body>
+    <div class="fixed-header">
+        <div class="container">
+            <nav>
+                
+                
+                <a href="nis.html">Panacea</a>
+                <a href="aa.html">Partime job</a>
+                <a href="jindex.html">Question bank</a>
+                <a href="login.php">Admin</a>
+                <a href="feed.html">Feedback</a>
+                <a href="col1.1.html">Placement</a>
+            </nav>
+        </div>
+    </div>
+    <div class="containerr">
+    
+        
+
+            
+        
+    
+
+</div>  
+    <div class="fixed-footer  ">
+        <div class="container"><center><p text-align:right>WELCOME</p></center>
+		
+		</div>        
+    </div>
+</body>
+</html>                            
